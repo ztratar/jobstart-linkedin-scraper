@@ -55,6 +55,11 @@ function getProfile(linkedInURL, callback) {
                     $(this).find("header h5 span:last").text(),
                     $(this).find("> span").text()));
             });
+
+			profile.skills = [];
+			$("#profile-skills span.endorse-item-name a").each(function() {
+				profile.skills.push($(this).text());
+			});
             callback(profile);
         }
     });
