@@ -1,0 +1,40 @@
+{
+  "name": "linkedin-scraper",
+  "version": "1.0.1",
+  "description": "A scraper for LinkedIn, give us a linkedin profile URL and we'll give you a nice data structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Aaditya Sriram",
+    "email": "aaditya@aadityasriram.com",
+    "url": "http://aadityasriram.com/"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.1.3",
+    "jsdom": "^3.1.0"
+  },
+  "gitHead": "8cbb3b99480d27db2b2547c9f8c34b338595101d",
+  "_id": "linkedin-scraper@1.0.1",
+  "_shasum": "9b8f3f93893bc9caaa06824704d8fef547a2d32b",
+  "_from": "linkedin-scraper@*",
+  "_npmVersion": "1.4.28",
+  "_npmUser": {
+    "name": "aadisriram",
+    "email": "aaditya@aadityasriram.com"
+  },
+  "maintainers": [
+    {
+      "name": "aadisriram",
+      "email": "aaditya@aadityasriram.com"
+    }
+  ],
+  "dist": {
+    "shasum": "9b8f3f93893bc9caaa06824704d8fef547a2d32b",
+    "tarball": "http://registry.npmjs.org/linkedin-scraper/-/linkedin-scraper-1.0.1.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/linkedin-scraper/-/linkedin-scraper-1.0.1.tgz"
+}
