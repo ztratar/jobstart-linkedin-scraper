@@ -14,7 +14,12 @@ function getProfile(linkedInURL, callback) {
 				console.log('err', errors);
 				callback(false);
 				return;
+			} else {
+				console.log('window', window);
 			}
+
+			if (errors) console.log('errors', errors);
+
             var $ = window.$;
             var profile = new ProfileClass();
             profile.name = $("#name h1 span span").text();
