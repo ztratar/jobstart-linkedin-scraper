@@ -5,13 +5,11 @@ var Honors = require("./data-containers/honors");
 var Project = require("./data-containers/projects");
 var Education = require("./data-containers/education");
 
-function getProfile(linkedInURL, callback) {
+function getProfile(linkedInURL, headers, callback) {
     jsdom.env({
         url: linkedInURL,
         scripts: ["http://code.jquery.com/jquery.js"],
-		headers: {
-			"User-Agent": "Mozilla/5.0"
-		},
+		headers: headers,
         done: function(errors, window) {
 			if (!window) {
 				console.log('err', errors);
