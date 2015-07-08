@@ -10,7 +10,8 @@ function getProfile(linkedInURL, callback) {
         url: linkedInURL,
         scripts: ["http://code.jquery.com/jquery.js"],
 		headers: {
-			"user-agent": "Mozilla/5.0"
+			"user-agent": "Mozilla/5.0",
+			"User-Agent": "Mozilla/5.0"
 		},
         done: function(errors, window) {
 			if (!window) {
@@ -19,7 +20,6 @@ function getProfile(linkedInURL, callback) {
 				return;
 			} else {
 				console.log('window title', window.document.title);
-				console.log('window loc', window.location);
 				if (!window.document || !window.document.documentElement) {
 					console.log('no window doc elem');
 				} else {
