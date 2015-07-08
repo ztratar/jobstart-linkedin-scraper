@@ -15,7 +15,11 @@ function getProfile(linkedInURL, callback) {
 				callback(false);
 				return;
 			} else {
-				console.log('window', window);
+				if (!window.document || !window.document.documentElement) {
+					console.log('no window doc elem');
+				} else {
+					console.log('window', window.document.documentElement.innerHTML);
+				}
 			}
 
 			if (errors) console.log('errors', errors);
