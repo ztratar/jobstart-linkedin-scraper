@@ -12,6 +12,8 @@ function getProfile(linkedInURL, callback) {
         done: function(errors, window) {
 			if (!window) {
 				console.log('err', errors);
+				callback(false);
+				return;
 			}
             var $ = window.$;
             var profile = new ProfileClass();
