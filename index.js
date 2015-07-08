@@ -10,6 +10,9 @@ function getProfile(linkedInURL, callback) {
         url: linkedInURL,
         scripts: ["http://code.jquery.com/jquery.js"],
         done: function(errors, window) {
+			if (!window) {
+				console.log('err', errors);
+			}
             var $ = window.$;
             var profile = new ProfileClass();
             profile.name = $("#name h1 span span").text();
@@ -57,7 +60,7 @@ function getProfile(linkedInURL, callback) {
             });
 
 			profile.skills = [];
-			$("#profile-skills span.endorse-item-name a").each(function() {
+			$("#background-skills span.endorse-item-name a").each(function() {
 				profile.skills.push($(this).text());
 			});
             callback(profile);
