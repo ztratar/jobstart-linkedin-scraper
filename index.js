@@ -18,11 +18,11 @@ function getProfile(linkedInURL, callback) {
 				callback(false);
 				return;
 			} else {
-				//console.log('window title', window.document.title);
+				console.log('window title', window.document.title);
 				if (!window.document || !window.document.documentElement) {
 					//console.log('no window doc elem');
 				} else {
-					//console.log('window', window.document.documentElement.innerHTML.slice(0, 400));
+					console.log('window', window.document.documentElement.innerHTML.slice(0, 400));
 				}
 			}
 
