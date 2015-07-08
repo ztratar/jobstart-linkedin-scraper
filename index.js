@@ -9,12 +9,16 @@ function getProfile(linkedInURL, callback) {
     jsdom.env({
         url: linkedInURL,
         scripts: ["http://code.jquery.com/jquery.js"],
+		headers: {
+			'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36'
+		},
         done: function(errors, window) {
 			if (!window) {
 				console.log('err', errors);
 				callback(false);
 				return;
 			} else {
+				console.log('window title', window.document.title);
 				if (!window.document || !window.document.documentElement) {
 					console.log('no window doc elem');
 				} else {
