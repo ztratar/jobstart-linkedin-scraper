@@ -9,10 +9,7 @@ function getProfile(linkedInURL, callback) {
     jsdom.env({
         url: linkedInURL,
         scripts: ["http://code.jquery.com/jquery.js"],
-		headers: {
-			"user-agent": "Mozilla/5.0",
-			"User-Agent": "Mozilla/5.0"
-		},
+		headers: "User-Agent: Mozilla/5.0",
         done: function(errors, window) {
 			if (!window) {
 				console.log('err', errors);
