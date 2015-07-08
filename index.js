@@ -22,7 +22,7 @@ function getProfile(linkedInURL, callback) {
 				if (!window.document || !window.document.documentElement) {
 					console.log('no window doc elem');
 				} else {
-					console.log('window', window.document.documentElement.innerHTML);
+					console.log('window', window.document.documentElement.innerHTML.slice(0, 800));
 				}
 			}
 
