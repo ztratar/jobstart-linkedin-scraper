@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "jquery": "^2.1.3",
-    "jsdom": "^3.1.0"
+    "jsdom": "^6.5.1"
   },
   "gitHead": "8cbb3b99480d27db2b2547c9f8c34b338595101d",
   "_id": "linkedin-scraper@1.0.1",
